@@ -8,13 +8,34 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    var personsArray = [Person]()
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        tableView.reloadData()
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return personsArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! personCell
+        
+        let people = personsArray[indexPath.row]
+        
+        cell.nameLabel?.text = people.name
+        cell.thingLabel?.text = people.favoriteThing
+        
+        cell.setup(people)
+        
+        return cell
 
-
+    }
 }
 
