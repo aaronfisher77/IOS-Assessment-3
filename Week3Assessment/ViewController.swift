@@ -16,7 +16,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let ezra = Person(name: "Ezra Kiteck", favoriteThing: "Books", favoriteColor: .red)
+        
+        let briley = Person(name: "Briley Barron", favoriteThing: "Math", favoriteColor: .red)
+        
+        let hannah = Person(name: "Hannah Crimmins", favoriteThing: "Horses", favoriteColor: .green)
+        
+        personsArray.append(hannah)
+        personsArray.append(briley)
+        personsArray.append(ezra)
+        
         tableView.reloadData()
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,11 +43,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         cell.nameLabel?.text = people.name
         cell.thingLabel?.text = people.favoriteThing
+        cell.backgroundColor = people.favoriteColor
+        
         
         cell.setup(people)
         
         return cell
-
     }
 }
 

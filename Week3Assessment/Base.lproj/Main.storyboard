@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="pEq-fK-M1W">
             <objects>
-                <viewController id="cgV-8m-Adz" customClass="ViewController" customModule="Table_View_practice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cgV-8m-Adz" customClass="ViewController" customModule="Week3Assessment" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yuq-r8-k8c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,11 +23,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" rowHeight="80" id="N8p-h8-R3Q" customClass="personCell" customModule="Week3Assessment" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" rowHeight="60" id="N8p-h8-R3Q" customClass="personCell" customModule="Week3Assessment">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N8p-h8-R3Q" id="34T-Te-nK2">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6l-Fo-GAP">
@@ -36,17 +36,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GD3-8y-PLo">
-                                                    <rect key="frame" x="90" y="29.5" width="97" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="GD3-8y-PLo" secondAttribute="height" multiplier="97:21" id="0RS-lN-3Fs"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ5-79-Jh5">
-                                                    <rect key="frame" x="211" y="20" width="104" height="39"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ5-79-Jh5">
+                                                    <rect key="frame" x="14" y="32" width="45.5" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="nJ5-79-Jh5" secondAttribute="height" multiplier="8:3" id="DAe-9S-JhC"/>
                                                     </constraints>
@@ -56,20 +47,16 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="GD3-8y-PLo" firstAttribute="top" secondItem="34T-Te-nK2" secondAttribute="topMargin" constant="18.5" id="32V-sJ-Oit"/>
-                                                <constraint firstItem="nJ5-79-Jh5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GD3-8y-PLo" secondAttribute="trailing" constant="8" symbolic="YES" id="3Sq-8X-7L2"/>
-                                                <constraint firstItem="GD3-8y-PLo" firstAttribute="leading" secondItem="34T-Te-nK2" secondAttribute="leadingMargin" constant="75" id="4Ke-9S-Jq1"/>
-                                                <constraint firstItem="b6l-Fo-GAP" firstAttribute="leading" secondItem="34T-Te-nK2" secondAttribute="leadingMargin" constant="-1" id="HeI-3X-D6S"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="nJ5-79-Jh5" secondAttribute="trailing" constant="45" id="I4z-v0-bKt"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="nJ5-79-Jh5" secondAttribute="bottom" constant="10" id="Irk-Ki-3BV"/>
-                                                <constraint firstItem="nJ5-79-Jh5" firstAttribute="top" secondItem="34T-Te-nK2" secondAttribute="topMargin" constant="9" id="S4v-Ck-ee9"/>
-                                                <constraint firstItem="b6l-Fo-GAP" firstAttribute="top" secondItem="34T-Te-nK2" secondAttribute="topMargin" constant="-9" id="dR1-sg-eD4"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b6l-Fo-GAP" secondAttribute="trailing" constant="20" symbolic="YES" id="elv-4Q-AeI"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="GD3-8y-PLo" secondAttribute="bottom" constant="18.5" id="rox-X4-cGG"/>
+                                                <constraint firstItem="b6l-Fo-GAP" firstAttribute="leading" secondItem="nJ5-79-Jh5" secondAttribute="leading" id="4b3-ZU-P2u"/>
+                                                <constraint firstItem="nJ5-79-Jh5" firstAttribute="bottom" secondItem="34T-Te-nK2" secondAttribute="bottomMargin" id="Ato-5l-P0f"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="nJ5-79-Jh5" secondAttribute="trailing" id="F0T-yo-WxF"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b6l-Fo-GAP" secondAttribute="trailing" constant="20" symbolic="YES" id="Noj-Id-kKl"/>
+                                                <constraint firstItem="b6l-Fo-GAP" firstAttribute="top" secondItem="34T-Te-nK2" secondAttribute="topMargin" constant="-9" id="rHZ-WF-h3e"/>
+                                                <constraint firstItem="nJ5-79-Jh5" firstAttribute="leading" secondItem="34T-Te-nK2" secondAttribute="leadingMargin" constant="-1" id="u0n-B3-Pdx"/>
+                                                <constraint firstItem="nJ5-79-Jh5" firstAttribute="top" secondItem="b6l-Fo-GAP" secondAttribute="bottom" constant="9" id="vDu-dJ-bqz"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="colorLabel" destination="GD3-8y-PLo" id="bu2-80-4yq"/>
                                             <outlet property="nameLabel" destination="b6l-Fo-GAP" id="PvA-Wz-blQ"/>
                                             <outlet property="thingLabel" destination="nJ5-79-Jh5" id="Mma-3Q-JME"/>
                                         </connections>
@@ -91,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2g5-qw-tAI" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1575" y="-69"/>
+            <point key="canvasLocation" x="-1575.2" y="-69.715142428785612"/>
         </scene>
     </scenes>
 </document>
